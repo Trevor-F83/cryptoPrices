@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+//Import route and components
+import { Route } from "react-router-dom";
+import Currencies from "./pages/Currencies";
+import Main from "./pages/Main";
+import Price from "./pages/Price";
 
 function App() {
   return (

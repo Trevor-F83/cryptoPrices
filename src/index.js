@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//This is a named import. Named imports allow for multiple imports from a single statement
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* Below is a HOC. A component (BrowserRouter) taking another Component (App) as an argument */}
+    <BrowserRouter> 
     <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
